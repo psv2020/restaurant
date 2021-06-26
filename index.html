@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurant" />
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="/restaurant/css/gamburgers.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script src="/restaurant/js/script.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="header-logo logo">
+                    <a href="#" aria-label="logo">
+                        <img src="/img/logo.svg" alt="logo" width="160" height="87">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="header-menu flexbox">
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link link-activ" aria-label="main">главная</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link link-main" aria-label="sofit event house">sofit event house</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link" aria-label="events">мероприятия</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link" aria-label="tourism">туристам</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link" aria-label="catering">кейтеринг</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link" aria-label="agency">для агентств</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-hamburger">
+                    <button class="hamburger hamburger--collapse" type="button" id="hamburger">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="burger">
+                    <a href="#" aria-label="burger">
+                        <svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="0.5" x2="40" y2="0.5" stroke="black"/>
+                            <line y1="10.5" x2="40" y2="10.5" stroke="black"/>
+                            <line y1="20.5" x2="40" y2="20.5" stroke="black"/>
+                        </svg>
+                    </a>
+                </div>
+                <!-- <div class="mobile-nav" id="mobile-nav">
+                    <div class="mobile-nav-content">
+
+                    </div>
+
+                </div> -->
+            </div>
+
+           
+            <div class="header-center">
+                <div class="header-img">
+                    <img src="/img/header-1.png"alt="header-1" width="580" height="650">
+                    <div class="img-title-wrapper">
+                        <div class="img-title">
+                            <h2>корпоративы</h2>
+                            <p>Отметьте лучший праздник<br> в лучшем дворце Петербурга!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-img">
+                    <img src="/img/header-2.png"alt="header-2" width="580" height="650">
+                    <div class="img-title-wrapper">
+                        <div class="img-title">
+                            <h2>свадьбы</h2>
+                            <p>Отметьте лучший праздник<br> в лучшем дворце Петербурга!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-img">
+                    <img src="/img/header-3.png"alt="header-3" width="580" height="650">
+                    <div class="img-title-wrapper">
+                        <div class="img-title">
+                            <h2>званые вечера</h2>
+                            <p>Отметьте лучший праздник<br> в лучшем дворце Петербурга!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="arrows flexbox">
+                <li class="arrows__item left arrows__item--activ">
+                    <a href="#" aria-label="arrow-left">
+                         <img src="/img/arrow-big.svg" alt="arrow" widht="5" height="9">
+                    </a>
+                </li>
+                <li class="arrows__item right">
+                    <a href="#" aria-label="arrow-right">
+                        <img src="/img/arrow.svg" alt="arrow" widht="5" height="9">
+                    </a>
+                </li>
+            </ul>  
+        </div> 
+    </header>
+
+    <div class="mobile__nav" id="mobile__nav">
+        <div class="mobile__nav-content">
+            <nav class="menu-mobile">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link" aria-label="main">главная</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link" aria-label="sofit events house">sofit event house</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link" aria-label="events">мероприятия</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link" aria-label="tourism">туристам</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link" aria-label="catering">кейтеринг</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link" aria-label="agency">для агентств</a>
+                    </li>
+                </ul>
+            </nav> 
+        </div>
+    </div>
+
+    <!-- /header -->
+
+    <!-- about -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about__top">
+                <h1>о ресторане</h1>
+                <p>
+                    <img src="/img/logo-min.svg" alt="logo" width="170" height="30">
+                </p>
+                <p class="definition">летний дворец</p>
+                <div class="about-video video">
+                    <!-- <a href="#" aria-label="logo"> -->
+                        <img src="/img/about-video.png" alt="video" width="920" height="480">
+                    <!-- </a> -->
+                </div>
+            </div>
+            
+            <div class="advantages grid-container">
+                <div class="advantages__item palace">
+                    <p class="center-img">
+                         <img src="/img/logo.svg" alt="logo" width="202" height="110">
+                    </p>
+                   
+                    <h3>дворец</h3>
+                    <p>Добро пожаловать в Летний Дворец!<br><br>Всего в 12 километрах от Петербурга, неподалеку от
+                        знаменитых фонтанов и парков Петергофа воплощен в жизнь один из самых грандиозных проектов
+                        event-индустрии России – ресторанный комплекс «Летний Дворец». Открытый в 2009 году,
+                        он объединил под одной крышей современный банкетный зал в исторических дворцовых
+                        интерьерах на 800 гостей и собственный кейтеринг.</p>
+                </div>
+                <div class="advantages__item area">
+                    <div class="item-top">
+                        <img src="/img/area.svg" alt="area" width="46" height="30">
+                        <h3 class="pt">площадка</h3>
+                    </div>
+                    
+                    <p>Сочетание классических интерьеров и современных технических возможностей
+                        выгодно отличают Летний Дворец от большинства других исторических площадок города.</p>
+                </div>
+                <div class="advantages__item interior">
+                    <div class="item-top">
+                        <img src="/img/interior.svg" alt="area" width="46" height="30">
+                        <h3 class="pt">интерьеры</h3>
+                    </div>
+                      
+                    <p>Изысканное внутреннее убранство Летнего Дворца — тонко выполненная стилизация
+                       с использованием традиционных технологий и материалов — мрамора, бронзового литья.</p>
+                </div>
+                <div class="advantages__item technologies">
+                    <div class="item-top">
+                       <img src="/img/tehnologi.svg" alt="area" width="46" height="30">
+                       <h3 class="pt">технологии</h3> 
+                    </div>
+                    
+                    <p>Возможности «Летнего Дворца» практически безграничны с точки зрения
+                        проведения мероприятий самого разного формата и масштаба.</p>
+                </div>
+                <div class="advantages__item equipment">
+                    <div class="item-top">
+                        <img src="/img/equipment.svg" alt="area" width="46" height="30">
+                        <h3 class="pt">оборудование</h3>
+                    </div>
+                    
+                    <p>Установлен комплект самого современного звукового оборудования,
+                        который приятно удивит даже знатока качественного звука.</p>
+                </div>
+            </div>
+            <div class="background-gray"></div>
+        </div>
+    </section>
+    <!-- /about -->
+
+    <!-- gallery -->
+    <section class="gallery">
+        <div class="gallery-container">
+            <div class="grid-container2">
+                <div class="gallery-title">
+                    <h3>галерея</h3>
+                    <p>
+                        <img src="/img/logo-min.svg" alt="logo" width="170" height="30">
+                    </p>
+                    <p class="definition">летний дворец</p>
+                </div>
+                <div class="gallery-img1">
+                    <img src="/img/gallery-img1.png" alt="gallery" width="445" height="300">
+                </div>
+                <div class="gallery-img2">
+                    <img src="/img/gallery-img2.png" alt="gallery" width="350" height="300">
+                </div>
+                <div class="gallery-img3">
+                    <img src="/img/gallery-img3.png" alt="gallery" width="635" height="630">
+                </div>
+                <div class="gallery-img4">
+                    <img src="/img/gallery-img4.png" alt="gallery" width="445" height="300">
+                </div>
+                <div class="gallery-img5">
+                    <img src="/img/gallery-img5.png" alt="gallery" width="445" height="300">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /gallery -->
+
+    <!-- download -->
+    <section class="download">
+        <h3>узнайте о нас больше</h3>
+        <div class="btn-group">
+            <button class="btn-white first">скачать план</button>
+            <button class="btn-white">скачать презентацию</button>
+        </div>
+    </section>
+    <!-- /download -->
+
+    <!-- contacts -->
+    <section class="contacts">
+        <div class="contacts-wrapper flexbox">
+            <div class="contacts-left">
+                <h2>хотите провести <br>мероприятие?</h2>
+                <p>Или у вас остались вопросы, на которые мы сможем вам ответить <br>в процессе разговора - напишите нам.
+                   Мы открыты для диалога!</p>
+                <table class="contacts-table" width="540"  cellpadding="0" cellspacing="0">
+                    <tr> 
+                        <th colspan="2" class="contacts-table-header">ресторан</th>
+                        <th colspan="2" class="contacts-table-header">офис</th>
+                    </tr>
+                    <tr> 
+                        <td class="contacts-table-cell"><img src="/img/address.svg" alt="address" width="21" height="30"></td>
+                        <td class="contacts-table-cell">Санкт-Петербургское шоссе, д 130, к. 7</td>
+                        <td class="contacts-table-cell"><img src="/img/address.svg" alt="address" width="21" height="30"></td>
+                        <td class="contacts-table-cell">ст. м. «Лиговский проспект», ул. Черняховского, д. 75</td>
+                        
+                    </tr>
+                    <tr> 
+                        <td class="contacts-table-cell"><img src="/img/smartfone.svg" alt="address" width="30" height="30"></td>
+                        <td class="contacts-table-cell">+7 (812) 210 67 95</td>
+                        <td class="contacts-table-cell"><img src="/img/smartfone.svg" alt="address" width="30" height="30"></td>
+                        <td class="contacts-table-cell">+7 (812) 210 67 95</td>
+                    </tr>
+                    <tr> 
+                        <td class="contacts-table-cell"><img src="/img/mail.svg" alt="address" width="22" height="22"></td>
+                        <td class="contacts-table-cell">hello@summerpalace.ru</td>
+                        <td class="contacts-table-cell"><img src="/img/mail.svg" alt="address" width="22" height="22"></td>
+                        <td class="contacts-table-cell">hello@summerpalace.ru</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contacts-rigth">
+                <form action="" class="contacts-form">
+                    <input class="value" type="text" id="name" name="name" placeholder="Ваше имя"><label for="name"></label>
+                    <input class="value" type="email" id="email" name="email" placeholder="Email"><label for="email"></label>
+                    <textarea cols="30" rows="30" name="textarea" placeholder="   Сообщение"></textarea><label for="textarea"></label>
+                    <button class="btn-gold">отправить</button>
+                </form> 
+            </div>
+        </div>
+    </section>
+    <!-- /contacts -->
+
+    <!-- instagram -->
+    <section class="instagram">
+        <div class="instagram-top">
+                <h1>наш instagram</h1>
+                <p>
+                    <img src="/img/logo-min.svg" alt="logo-min" width="170" height="30">
+                </p>
+                <p class="definition">летний дворец</p>
+        </div>
+        <div class="instagram-bottom">
+            <div class="instagram__item odd">
+                <img src="/img/instagram-img1.png" alt="insta" width="320" height="304">  
+            </div>
+            <div class="instagram__item even">
+                <img src="/img/instagram-img 2.png" alt="insta" width="320" height="304">  
+            </div>
+            <div class="instagram__item odd">
+                <img src="/img/instagram-img1.png" alt="insta" width="320" height="304">  
+            </div>
+            <div class="instagram__item even">
+                <img src="/img/instagram-img 2.png" alt="insta" width="320" height="304">  
+            </div>
+            <div class="instagram__item odd">
+                <img src="/img/instagram-img1.png" alt="insta" width="320" height="304">  
+            </div>
+            <div class="instagram__item even">
+                <img src="/img/instagram-img 2.png" alt="insta" width="320" height="304">  
+            </div>
+        </div>
+      </section>
+    <!-- /instagram -->  
+
+    <!-- footer -->  
+    <footer>
+        <div class="footer">
+            <div class="footer-flexbox flexbox">
+                <div class="footer-copyright">Copyright (с) 2019 Ресторан “Летний дворец”</div>
+                <div class="footer-social">
+                    <a href="#" aria-label="fb">Facebook</a>
+                    <a href="#" class="line" aria-label="vk">Vkontakte</a>
+                    <a href="#" aria-label="instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <!-- /footer -->  
